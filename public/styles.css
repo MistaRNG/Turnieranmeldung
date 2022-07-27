@@ -184,8 +184,8 @@ body {
   position: absolute;
   left: -3px;
   top: -3px;
-  background: linear-gradient(45deg, #000000d8, #29292b, #2f302f,#60605f, #6d6b6b, #a8a6a7, 
-    #ffffff, #2f302f,#29292b, #000000d8);
+  background: linear-gradient(45deg, #000000d8, #373738, #403f3f,#60605f, #6d6b6b, #a8a6a7, 
+    #ffffff, #515351,#333334, #000000d8);
   background-size: 400%;
   width: calc(100% + 6px);
   height: calc(100% + 6px);
