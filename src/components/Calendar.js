@@ -34,12 +34,12 @@ class Calendar extends React.Component {
     locale(navigator.language);
 }
   render() {
-    return (
+    return (<div className="calendar-section">
       
       <React.Fragment>
       <div className="calendar" id="calendar-section">
-        <div className="long-title">
-          <h3>Yu-Gi-Oh! Turnierkalender</h3>
+        <div className="calendar-title">
+          <h3><span className="tcg-name">Yu-Gi-Oh!</span> Turnierkalender</h3>
         </div>
         <Scheduler
           dataSource={dataSource}
@@ -61,10 +61,10 @@ class Calendar extends React.Component {
 
 
 
- <h3 className="card-element">Demnächst anstehende Turniere:</h3>
+ 
       </React.Fragment>
-
-    );
+      <h3 className="card-heading  ">Demnächst anstehende Turniere:</h3>
+    </div>);
   }
 }
 
