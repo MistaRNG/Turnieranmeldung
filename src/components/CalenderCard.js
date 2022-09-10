@@ -19,7 +19,7 @@ function CalendarCard(props){
       
               
               <div className="yugioh-carlendar-card block">
-              
+              <a href="/ParticipationForm">
               <div className="carlendar-card-container two">
               <img src={images.templateCard2} className="card-img2" alt="Bild" />
               
@@ -33,17 +33,9 @@ function CalendarCard(props){
               <h6 className="yugioh-cc-discription">{props.discription}</h6>
               <p className="start-text"><FontAwesomeIcon icon={faClock} /> Beginn: {props.start} Uhr</p>
               <p className="participants-number"><FontAwesomeIcon icon={faUserCheck} /> Max. Teilnehmer: 16</p>
-
-              
-              
-
           </div>
+          </a>
         </div>
-
-
-
-
-
       </div>
 }
  {/* <div className="card-element">
