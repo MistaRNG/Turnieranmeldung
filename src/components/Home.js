@@ -95,10 +95,10 @@ function Home(){
         <img className="img-fluid background-img" src={ Images.cardBack } alt="background-img" />
         <Header />
         <Calendar />
-        <CardInfo key={1}  numberOfEvents= {cardInfoText}/>
+        <CardInfo  numberOfEvents= {cardInfoText}/>
         <div className="row">
         {eventsToRender.map(item => {
-        return <div className="col-lg-4 col-md-6"><CalendarCard numberOfEvents= {eventsToRender.length} key= {item.id} date={new Intl.DateTimeFormat('de-DE', options).format(new Date(item.start.dateTime))} title={item.summary} discription={item.description} start={new Intl.DateTimeFormat('de-DE', options2).format(new Date(item.start.dateTime))} />
+        return <div key={item} className="col-lg-4 col-md-6"><CalendarCard key= {item.id} numberOfEvents= {eventsToRender.length} date={new Intl.DateTimeFormat('de-DE', options).format(new Date(item.start.dateTime || item.start.date))} title={item.summary} discription={item.description} start={new Intl.DateTimeFormat('de-DE', options2).format(new Date(item.start.dateTime || item.start.date))} />
         </div> })}
         </div>
         <Disclaimer numberOfEvents= {eventsToRender.length}/>

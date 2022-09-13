@@ -78,18 +78,6 @@ class Calendar extends React.Component {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
