@@ -9,7 +9,11 @@ import Scheduler from 'devextreme-react/scheduler';
 
 import CustomStore from 'devextreme/data/custom_store';
 
+
+
+
 function getData(_, requestOptions) {
+  
   const PUBLIC_KEY = 'AIzaSyB0E8hjPnD4E88pKKaJuOY6QwN2Dn6TtxQ';
   const CALENDAR_ID = 'e2nromtfea9g4mhn1bbv32en24@group.calendar.google.com';
   const dataUrl = ['https://www.googleapis.com/calendar/v3/calendars/',
@@ -33,6 +37,10 @@ class Calendar extends React.Component {
     loadMessages(deMessages);
     locale(navigator.language);
 }
+
+
+
+
   render() {
     return (<div className="calendar-section">
       
@@ -66,6 +74,22 @@ class Calendar extends React.Component {
       <h3 className="card-heading  ">Demnächst anstehende Turniere:</h3>
     </div>);
   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 

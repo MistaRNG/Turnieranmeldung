@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Calendar from "./Calendar";
+import CardInfo from "./CardInfo";
 import CalendarCard from "./CalenderCard"
+import Disclaimer from "./Disclaimer"
 import Footer from "./Footer"
 import BabelPluginTransformObjectRestSpread from "babel-plugin-transform-object-rest-spread";
 import { gapi } from "gapi-script";
@@ -77,18 +79,29 @@ function Home(){
     const options = {  month: 'long', day: 'numeric' };
     const options2 = {  hour: 'numeric' , minute: "numeric"};
 
+    var cardInfoText =""
+
+   if(eventsToRender.length > 0) {
+    cardInfoText = "Klicke auf eine der folgenden Karten, um am jeweiligen Event teilzunehmen:"
+   } else {
+    cardInfoText=""
+   }
+
+
+
+
 
     return <div>
         <img className="img-fluid background-img" src={ Images.cardBack } alt="background-img" />
         <Header />
         <Calendar />
+        <CardInfo key={1}  numberOfEvents= {cardInfoText}/>
         <div className="row">
-        
         {eventsToRender.map(item => {
-        return <div className="col-lg-4 col-md-6"><CalendarCard key= {item.id} date={new Intl.DateTimeFormat('de-DE', options).format(new Date(item.start.dateTime))} title={item.summary} discription={item.description} start={new Intl.DateTimeFormat('de-DE', options2).format(new Date(item.start.dateTime))} />
+        return <div className="col-lg-4 col-md-6"><CalendarCard numberOfEvents= {eventsToRender.length} key= {item.id} date={new Intl.DateTimeFormat('de-DE', options).format(new Date(item.start.dateTime))} title={item.summary} discription={item.description} start={new Intl.DateTimeFormat('de-DE', options2).format(new Date(item.start.dateTime))} />
         </div> })}
-      
         </div>
+        <Disclaimer numberOfEvents= {eventsToRender.length}/>
         <Footer />
     </div>
 

@@ -12,7 +12,6 @@ import $ from "jquery";
 
 function CalendarCard(props){
 
-
     return <div className="calendar-card-section">
     
 

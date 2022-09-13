@@ -2,6 +2,9 @@
 
 /*--------------------------- globale styles ----------------------------------------- */
 
+
+html, body { margin: 0; padding: 0; }
+
 @font-face {
   font-family: yugioh;
   src: local(yugioh), url(./fonts/Yu-Gi-OhMatrixRegularSmallCaps2.ttf) format('truetype');
@@ -24,6 +27,10 @@
 
 .container-fluid{
     padding:0;
+}
+
+.row {
+  margin: 0;
 }
 
 .impressum{
@@ -284,6 +291,15 @@
 
 /*--------------------------- calendar card v2----------------------------------------- */
 
+
+.card-info {
+  font-family: yugioh;
+  font-size: 3rem;
+  padding-left: 5%;
+}
+
+
+
 .calendar-card-section{
   padding: 15%;
 }
@@ -310,17 +326,24 @@
   left: 10%;
   margin-top: 5%;
   font-size: 2.5vw;
+  color: white;
 }
 
 @media (max-width: 1000px) {
   .yugioh-cc-date {
     font-size: 3.5vw;
   }
+  .card-info {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 750px) {
   .yugioh-cc-date {
     font-size: 7vw;
+  }
+  .card-info {
+    font-size: 1rem;
   }
 }
 
