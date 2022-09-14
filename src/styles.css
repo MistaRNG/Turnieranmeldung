@@ -119,11 +119,11 @@ html, body { margin: 0; padding: 0; }
   margin-left: 1%;
 }
 
-@media (max-width: 1250px) {
+/* @media (max-width: 1250px) {
   .yugi-art-left {
     height: 30vh;
   }
-}
+} */
 
 .yugi-art-right{
   bottom:0;
@@ -133,11 +133,11 @@ html, body { margin: 0; padding: 0; }
   z-index: -5;
 }
 
-@media (max-width: 1250px) {
+/* @media (max-width: 1250px) {
   .yugi-art-right {
     height: 30vh;
   }
-}
+} */
 
 .ots-logo {
   position: absolute;
@@ -155,9 +155,17 @@ html, body { margin: 0; padding: 0; }
     margin-right: auto;
     text-align: center;
     left: 0;
-    bottom: 13vh;
+    bottom: 12vh;
     width: 100%;
 }
+
+
+@media (max-width: 1250px) {
+  .arrow-header {
+    bottom: 10vh;
+  }
+}
+
 
 .button-container {
   box-shadow: 0 2px 1px rgba(0,0,0,0.09), 

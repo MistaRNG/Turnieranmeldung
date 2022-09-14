@@ -108,7 +108,7 @@ body {
 .arrow:before {
   width: $arrow-line-width;
   height: $arrow-line-length;  
-@media screen and (max-width: $medium) {
+@media screen and (max-width: 1250px) {
   width: 2px;
   height: 25px;  
   
@@ -118,7 +118,7 @@ body {
 .arrow:after {
   width: $arrow-line-width;
   height: $arrow-line-length;  
-@media screen and (max-width: $medium) {
+@media screen and (max-width: 1250px) {
   width: 2px;
   height: 25px;  
   
@@ -130,7 +130,7 @@ body {
 .arrow-container {
   width: 100px;
   height: 100px;  
-@media screen and (max-width: $medium) {
+@media screen and (max-width: 1250px) {
   width: 50px;
   height: 50px;  
   
