@@ -185,8 +185,8 @@ body {
     font-family: "Monument Extended", sans-serif;
     font-size: 2vw;
     font-weight: lighter;
-    line-height: 100px;
     overflow: hidden;
+    line-height: 100px;
   }
 
   @keyframes anim1 {
@@ -217,20 +217,20 @@ body {
     width: 30%;
   @media screen and (max-width: 950px) {
     width: 40%;
+    height: 80px;
     
    }
  }
 
 
 .mask {
-  font-size: 3vw;
   @media screen and (max-width: 950px) {
     font-size: 3vw;
+    line-height: 80px;
   }
 }
 
 .button-container button {
-  font-size: 3vw;
   @media screen and (max-width: 950px) {
     font-size: 3vw;
   }
