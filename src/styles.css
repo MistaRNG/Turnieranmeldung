@@ -155,14 +155,14 @@ html, body { margin: 0; padding: 0; }
     margin-right: auto;
     text-align: center;
     left: 0;
-    bottom: 12vh;
+    bottom: 8vh;
     width: 100%;
 }
 
 
 @media (max-width: 1250px) {
   .arrow-header {
-    bottom: 10vh;
+    bottom: 7vh;
   }
 }
 
