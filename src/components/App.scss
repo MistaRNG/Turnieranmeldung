@@ -159,7 +159,7 @@ body {
     width: 101%;
     height: 100%;
     font-family: "Monument Extended", sans-serif;
-   
+    font-size: 2vw;
     background: #fff;
     -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
     mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
@@ -183,6 +183,7 @@ body {
     width: 101%;
     height: 100%;
     font-family: "Monument Extended", sans-serif;
+    font-size: 2vw;
     font-weight: lighter;
     line-height: 100px;
     overflow: hidden;
@@ -212,34 +213,34 @@ body {
 
 
 
-  .button-container button {
-    font-size: 200%;
-  @media screen and (max-width: $medium) {
-    font-size: 150%;
+//   .button-container button {
+//     font-size: 200%;
+//   @media screen and (max-width: $medium) {
+//     font-size: 150%;
     
-  }
-}
+//   }
+// }
 
-.mask {
-    font-size: 200%;
-  @media screen and (max-width: $medium) {
-    font-size: 150%;
-  }
-}
+// .mask {
+//     font-size: 200%;
+//   @media screen and (max-width: $medium) {
+//     font-size: 150%;
+//   }
+// }
 
-.button-container button {
-    font-size: 200%;
-  @media screen and (max-width: $small) {
-    font-size: 90%;
-  }
-}
+// .button-container button {
+//     font-size: 200%;
+//   @media screen and (max-width: $small) {
+//     font-size: 90%;
+//   }
+// }
 
-.mask {
-    font-size: 200%;
-  @media screen and (max-width: $small) {
-    font-size: 90%;
-  }
-}
+// .mask {
+//     font-size: 200%;
+//   @media screen and (max-width: $small) {
+//     font-size: 90%;
+//   }
+// }
 
 
 
