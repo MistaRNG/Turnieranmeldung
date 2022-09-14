@@ -152,12 +152,14 @@ html, body { margin: 0; padding: 0; }
 
 @media (max-width: 1250px) {
   .arrow-header {
-    bottom: 7vh;
+    bottom: 6.5vh;
   }
   .arrow-header {
     font-size: 1.5rem;
   }
-
+  .dx-scheduler {
+    height: 400px !important;
+  }
 }
 
 @media (max-width: 950px) {

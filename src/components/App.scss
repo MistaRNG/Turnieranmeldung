@@ -169,6 +169,8 @@ body {
     color: #000;
     cursor: pointer;
     animation: anim2 0.7s steps(22) forwards;
+    
+    font-weight: bold;
   }
   
   .button-container button:hover {
@@ -187,6 +189,8 @@ body {
     font-weight: lighter;
     overflow: hidden;
     line-height: 100px;
+    
+    font-weight: bold;
   }
 
   @keyframes anim1 {
@@ -227,6 +231,7 @@ body {
   @media screen and (max-width: 950px) {
     font-size: 3vw;
     line-height: 80px;
+    
   }
 }
 

@@ -1,5 +1,5 @@
 import 'whatwg-fetch';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import BabelPluginTransformObjectRestSpread from "babel-plugin-transform-object-rest-spread";
 import deMessages from "devextreme/localization/messages/de.json";
 import { locale, loadMessages } from "devextreme/localization";
@@ -8,7 +8,6 @@ import { locale, loadMessages } from "devextreme/localization";
 import Scheduler from 'devextreme-react/scheduler';
 
 import CustomStore from 'devextreme/data/custom_store';
-
 
 
 
@@ -71,7 +70,7 @@ class Calendar extends React.Component {
 
  
       </React.Fragment>
-      <h3 className="card-heading  ">Demnächst anstehende Turniere:</h3>
+      <h3 className="card-heading">Demnächst anstehende Turniere:</h3>
     </div>);
   }
   
