@@ -213,27 +213,28 @@ body {
 
 
 
-//   .button-container button {
-//     font-size: 200%;
-//   @media screen and (max-width: $medium) {
-//     font-size: 150%;
+  .button-container {
+    width: 30%;
+  @media screen and (max-width: 950px) {
+    width: 40%;
     
-//   }
-// }
+   }
+ }
 
-// .mask {
-//     font-size: 200%;
-//   @media screen and (max-width: $medium) {
-//     font-size: 150%;
-//   }
-// }
 
-// .button-container button {
-//     font-size: 200%;
-//   @media screen and (max-width: $small) {
-//     font-size: 90%;
-//   }
-// }
+.mask {
+  font-size: 3vw;
+  @media screen and (max-width: 950px) {
+    font-size: 3vw;
+  }
+}
+
+.button-container button {
+  font-size: 3vw;
+  @media screen and (max-width: 950px) {
+    font-size: 3vw;
+  }
+}
 
 // .mask {
 //     font-size: 200%;
