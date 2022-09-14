@@ -152,7 +152,7 @@ html, body { margin: 0; padding: 0; }
 
 @media (max-width: 1250px) {
   .arrow-header {
-    bottom: 6.5vh;
+    bottom: 6vh;
   }
   .arrow-header {
     font-size: 1.5rem;
