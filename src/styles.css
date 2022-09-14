@@ -147,12 +147,6 @@ html, body { margin: 0; padding: 0; }
   transform: translate(-50%, -50%);
 }
 
-/* @media (max-width: 1000px) {
-  .ots-logo {
-    height: 10%;
-  }
-} */
-
 .arrow-header{
     font-size: 1.4vw;
     font-family: yugioh;

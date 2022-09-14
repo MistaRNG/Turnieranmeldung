@@ -1,6 +1,8 @@
 $total-arrows: 3;
 $arrow-line-length: 50px;
 $arrow-line-width: 4px;
+$medium: 1150px;
+$small: 700px;
 
 * {
     margin: 0;
@@ -103,6 +105,37 @@ body {
   }
 }
 
+.arrow:before {
+  width: $arrow-line-width;
+  height: $arrow-line-length;  
+@media screen and (max-width: $medium) {
+  width: 2px;
+  height: 25px;  
+  
+}
+}
+
+.arrow:after {
+  width: $arrow-line-width;
+  height: $arrow-line-length;  
+@media screen and (max-width: $medium) {
+  width: 2px;
+  height: 25px;  
+  
+}
+}
+
+
+
+.arrow-container {
+  width: 100px;
+  height: 100px;  
+@media screen and (max-width: $medium) {
+  width: 50px;
+  height: 50px;  
+  
+}
+}
 
 //-------------------------------------- Home Button ------------------------------------
 
@@ -177,8 +210,7 @@ body {
     }
   }
 
-  $medium: 1150px;
-  $small: 700px;
+
 
   .button-container button {
     font-size: 200%;
@@ -210,7 +242,10 @@ body {
 }
 
 
+
+
 //-------------------------------------- CalendarCard Button ------------------------------------
+
 
 $speed: 0.5s;
 
