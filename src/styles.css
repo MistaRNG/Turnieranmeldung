@@ -410,7 +410,7 @@ html, body { margin: 0; padding: 0; }
   left: 10%;
   margin-top: 118%;
   font-family: matrixBook;
-  height: 5vh;
+  height: 10%;
   overflow-y: auto;
   font-size: 0.65vw;
 }
