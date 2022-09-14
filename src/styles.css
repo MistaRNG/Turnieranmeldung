@@ -141,19 +141,20 @@ html, body { margin: 0; padding: 0; }
 
 .ots-logo {
   position: absolute;
+  width: 15vw;
   left: 50%;
   top: 70vh;
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .ots-logo {
     height: 10%;
   }
-}
+} */
 
 .arrow-header{
-    font-size: 2.1rem;
+    font-size: 1.4vw;
     font-family: yugioh;
     position: absolute;
     margin-left: auto;
@@ -171,6 +172,7 @@ html, body { margin: 0; padding: 0; }
               0 16px 8px rgba(0,0,0,0.09),
               0 32px 16px rgba(0,0,0,0.09);
 }
+
 
 /*--------------------------- google calendar ----------------------------------------- */
 
