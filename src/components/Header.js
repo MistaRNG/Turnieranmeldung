@@ -20,6 +20,7 @@ function Header() {
       </div>
     </div>
         <h1 className="bg-dark pageHeading">Willkommen bei der Turnierübersicht zu <br /><span className="tcg-name">Yu-Gi-Oh!</span></h1>
+        
         <img className="img-fluid yugi-art-left" src={ Images.yugiArtLeft } alt="yugi-art-left" />
         <img className="img-fluid yugi-art-right" src={ Images.yugiArtRight } alt="yugi-art-left" />
         <img className="img-fluid ots-logo" src={ Images.ots } alt="ots-logo" />

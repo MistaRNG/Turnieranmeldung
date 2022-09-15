@@ -8,7 +8,7 @@ import Footer from "./Footer"
 import BabelPluginTransformObjectRestSpread from "babel-plugin-transform-object-rest-spread";
 import { gapi } from "gapi-script";
 import Images from "../assets/images.js";
-
+import $ from "jquery";
 
 function Home(){
 
@@ -86,6 +86,7 @@ function Home(){
    } else {
     cardInfoText=""
    }
+
 
 
 

@@ -1,12 +1,11 @@
 import React from "react";
-
-
+import $ from "jquery";
+import { useIsOverflow } from './useIsOverflow';
 
 
 function Footer(props) {
 
 
-    
 
 return <div>
 
