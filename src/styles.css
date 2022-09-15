@@ -322,9 +322,12 @@ html, body { margin: 0; padding: 0; }
 
 .calendar-card-section{
   padding: 15%;
+  
+  border-radius: 1%;
 }
 
 .yugioh-carlendar-card {
+  
   display: inline-block;
   font-family: yugioh;
 }
@@ -1180,9 +1183,12 @@ body {
 	position: relative;
 	background: linear-gradient(0deg, #000, #272727);
   border-collapse: collapse;
+  border-radius: 1%;
 }
 
 .block:before, .block:after {
+  
+  border-radius: 1%;
 	content: '';
 	position: absolute;
 	left: 0;
