@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Turnieranmeldung/static/css/main.9a5d4b38.css",
+    "main.js": "/Turnieranmeldung/static/js/main.63b37630.js",
+    "static/media/headerImage.jpg": "/Turnieranmeldung/static/media/headerImage.4db1b6459d6aa00e2447.jpg",
+    "static/media/yugiArtRight.png": "/Turnieranmeldung/static/media/yugiArtRight.39a2c6ab4fd33f78408e.png",
+    "static/media/cardTemplate.png": "/Turnieranmeldung/static/media/cardTemplate.92040f1bb24a26a883d3.png",
+    "static/media/cardBack.jpeg": "/Turnieranmeldung/static/media/cardBack.71c60c823da59385b82b.jpeg",
+    "static/media/yugiArtLeft.png": "/Turnieranmeldung/static/media/yugiArtLeft.b334df31c29becd5bb34.png",
+    "static/media/attentionIcon.png": "/Turnieranmeldung/static/media/attentionIcon.5fbd23e761a038ff08b9.png",
+    "static/media/ots.png": "/Turnieranmeldung/static/media/ots.c57b5d888cefe3f209a8.png",
+    "static/media/Yu-Gi-OhITCStonSerifSmallCapsBold.ttf": "/Turnieranmeldung/static/media/Yu-Gi-OhITCStonSerifSmallCapsBold.40de46c3cb9d1c910461.ttf",
+    "static/media/Yu-Gi-OhMatrixBook.ttf": "/Turnieranmeldung/static/media/Yu-Gi-OhMatrixBook.4883095ac99690ffa433.ttf",
+    "static/media/Yu-Gi-OhMatrixRegularSmallCaps2.ttf": "/Turnieranmeldung/static/media/Yu-Gi-OhMatrixRegularSmallCaps2.841de8a046947e08d341.ttf",
+    "static/media/StoneSerifSemibold.ttf": "/Turnieranmeldung/static/media/StoneSerifSemibold.6402086721de3d0e42a7.ttf",
+    "static/media/maskIcon.png": "/Turnieranmeldung/static/media/maskIcon.9287cfdc71117b9f9571.png",
+    "static/media/covidIcon.png": "/Turnieranmeldung/static/media/covidIcon.8cd6eac2547d4409e4c1.png",
+    "index.html": "/Turnieranmeldung/index.html",
+    "main.9a5d4b38.css.map": "/Turnieranmeldung/static/css/main.9a5d4b38.css.map",
+    "main.63b37630.js.map": "/Turnieranmeldung/static/js/main.63b37630.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a5d4b38.css",
+    "static/js/main.63b37630.js"
+  ]
+}
