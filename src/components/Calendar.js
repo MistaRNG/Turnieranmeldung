@@ -4,11 +4,8 @@ import BabelPluginTransformObjectRestSpread from "babel-plugin-transform-object-
 import deMessages from "devextreme/localization/messages/de.json";
 import { locale, loadMessages } from "devextreme/localization";
 
-
 import Scheduler from 'devextreme-react/scheduler';
-
 import CustomStore from 'devextreme/data/custom_store';
-
 
 
 function getData(_, requestOptions) {
@@ -37,9 +34,6 @@ class Calendar extends React.Component {
     locale(navigator.language);
 }
 
-
-
-
   render() {
     return (<div className="calendar-section">
       
@@ -48,37 +42,26 @@ class Calendar extends React.Component {
         <div className="calendar-title">
           <h3><span className="tcg-name">Yu-Gi-Oh!</span> Turnierkalender</h3>
         </div>
-        <Scheduler
-          dataSource={dataSource}
-          views={views}
-          defaultCurrentView="month"
-          defaultCurrentDate={currentDate}
-          height={800}
-          startDayHour={0}
-          allDayPanelMode="allDay"
-          showAllDayPanel={false}
-          editing={false}
-          startDateExpr="start.dateTime"
-          endDateExpr="end.dateTime"
-          textExpr="summary"
-          firstDayOfWeek={1}
-          timeZone="" />
-
-      </div>
-
-
-
- 
+          <Scheduler
+            dataSource={dataSource}
+            views={views}
+            defaultCurrentView="month"
+            defaultCurrentDate={currentDate}
+            height={800}
+            startDayHour={0}
+            allDayPanelMode="allDay"
+            showAllDayPanel={false}
+            editing={false}
+            startDateExpr="start.dateTime"
+            endDateExpr="end.dateTime"
+            textExpr="summary"
+            firstDayOfWeek={1}
+            timeZone="" />
+      </div> 
       </React.Fragment>
       <h3 className="card-heading">Demnächst anstehende Turniere:</h3>
     </div>);
   }
-  
-
-
-
 }
-
-
 
 export default Calendar;

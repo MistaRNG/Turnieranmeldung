@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import { gapi } from "gapi-script";
 import $ from "jquery";
 import {
     MDBBtn,
@@ -10,10 +11,14 @@ import {
     MDBModalBody,
     MDBModalFooter,
   } from 'mdb-react-ui-kit';
-
-
-  
-
+  import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useParams,
+    useSearchParams
+  } from "react-router-dom";
 $(function() {
     $( "#button" ).click(function() {
       $( "#button" ).addClass( "onclic", 250, validate);
@@ -32,14 +37,7 @@ $(function() {
       }
     })
 
-
-
-
-
-
-
-
-function ParticipationForm(){
+function ParticipationForm(props){
     const [staticModal, setStaticModal] = useState(false);
 
   const toggleShow = () => setStaticModal(!staticModal);
@@ -48,6 +46,49 @@ function ParticipationForm(){
         window.setTimeout(function(){
             toggleShow();
         }, 3000)};
+
+
+  let gapi = window.gapi;
+
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  
+
+  
+  console.log(props.event)
+
+
+    const item = props.event.filter((e) => e.id === searchParams.get("eventId"));
+
+  
+
+    // item[0].attendees = ["11robert97@web.de"]
+    // item[0].attendees.email = ["11robert97@web.de"]
+
+    useEffect(() => {
+        // PUT request using fetch with async/await
+        async function updatePost() {
+            const requestOptions = {
+                method: 'PUT',
+                headers: {'Authorization': 'Bearer ya29.a0Aa4xrXOQg2_T3zqMrAPn9eYfqLXcpdPtu0uhPaxBJUlq_mVysXWeseDACktSXejTfXQuQzbauWqhxJm-FMGtTUuRCuEVhtK2TGA4bXRYva_aQmlZyLUZqv_NswvFRJzsBAGmbT-AurDulJDn0uD7ruymCMYsaCgYKATASARMSFQEjDvL9O9cmitkJkLkrMb8mZqFcqA0163', 
+                  'Content-Type': 'application/json'
+                }, 
+                
+                body: JSON.stringify(item[0])
+            };
+            const response = await fetch('https://www.googleapis.com/calendar/v3/calendars/e2nromtfea9g4mhn1bbv32en24@group.calendar.google.com/events/7rcd1i174fgqfdkolod4jf02vd?sendUpdates=all', requestOptions);
+            const data = await response.json();
+        }
+
+        updatePost();
+    }, []);
+
+    console.log(item[0])
+
+// clientID = 1038397562785-m2a944b6pgabepqlfm7l2ibtvdj88tao.apps.googleusercontent.com
+
+
+
 
 
     return <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">

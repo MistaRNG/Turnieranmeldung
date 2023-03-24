@@ -10,6 +10,7 @@ import { gapi } from "gapi-script";
 import Images from "../assets/images.js";
 import $ from "jquery";
 
+
 function Home(){
 
     const [events, setEvents] = useState();
@@ -87,11 +88,6 @@ function Home(){
     cardInfoText=""
    }
 
-
-
-
-
-
     return <div>
         <img className="img-fluid background-img" src={ Images.cardBack } alt="background-img" />
         <Header />
@@ -99,14 +95,12 @@ function Home(){
         <CardInfo  numberOfEvents= {cardInfoText}/>
         <div className="row">
         {eventsToRender.map(item => {
-        return <div key={item} className="col-lg-4 col-md-6"><CalendarCard key= {item.id} numberOfEvents= {eventsToRender.length} date={new Intl.DateTimeFormat('de-DE', options).format(new Date(item.start.dateTime || item.start.date))} title={item.summary} discription={item.description} start={new Intl.DateTimeFormat('de-DE', options2).format(new Date(item.start.dateTime || item.start.date))} />
+        return <div key={item} className="col-lg-4 col-md-6"><CalendarCard key= {item.id} eventId={item.id} numberOfEvents= {eventsToRender.length} date={new Intl.DateTimeFormat('de-DE', options).format(new Date(item.start.dateTime || item.start.date))} title={item.summary} discription={item.description} start={new Intl.DateTimeFormat('de-DE', options2).format(new Date(item.start.dateTime || item.start.date))} />
         </div> })}
         </div>
         <Disclaimer numberOfEvents= {eventsToRender.length}/>
         <Footer />
     </div>
-
 }
-
 
 export default Home;

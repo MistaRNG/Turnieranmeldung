@@ -27,15 +27,16 @@ function CalendarCard(props){
   function removeTextSpeed(){
     setTextSpeed("[" + props.title + "]")
     }
-  
-  
+    
+    var parameter = "/ParticipationForm?eventId=" + props.eventId;
+
     return <div className="calendar-card-section">
     
   
 
 
               <div className="yugioh-carlendar-card block">
-              <a href="/ParticipationForm">
+              <a href={parameter}>
               <div className="carlendar-card-container two" onMouseEnter={checkOverflow} onMouseLeave={removeTextSpeed}>
               <img src={images.templateCard2} className="card-img2" alt="Bild" />
               
