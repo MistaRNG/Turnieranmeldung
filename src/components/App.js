@@ -70,9 +70,9 @@ function App() {
 
    return <div>
    <div>
-      <HashRouter>
+      <HashRouter >
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route basename="Turnieranmeldung" path="/" element={<Home />} />
           <Route path="/Turnieranmeldung/ParticipationForm" element={<ParticipationForm event={eventsToRender} />} />
         </Routes>
       </HashRouter>

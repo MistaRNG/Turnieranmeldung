@@ -1,5 +1,12 @@
 import React from "react";
 import Images from "../assets/images.js";
+import { Link, animateScroll } from "react-scroll";
+
+
+function scrollToTop() {
+  animateScroll.scrollToTop();
+}
+
 
 
 function Header() {
@@ -25,11 +32,11 @@ function Header() {
         <img className="img-fluid yugi-art-right" src={ Images.yugiArtRight } alt="yugi-art-left" />
         <img className="img-fluid ots-logo" src={ Images.ots } alt="ots-logo" />
         <p className="arrow-header">zum Kalender</p>
-        <a href="#calendar-section" class="arrow-container">
+        <Link to="calendar-section" smooth={true} duration={500} class="arrow-container" onClick={scrollToTop}>
         <div class="arrow"></div>
         <div class="arrow"></div>
         <div class="arrow"></div>  
-        </a>
+        </Link>
     </div>
     );
 }
