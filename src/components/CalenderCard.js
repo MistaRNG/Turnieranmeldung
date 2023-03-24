@@ -7,7 +7,7 @@ import { faClock, faUserCheck } from '@fortawesome/free-solid-svg-icons'
 import $ from "jquery";
 import { useIsOverflow } from './useIsOverflow';
 import Marquee from "react-fast-marquee";
-
+import { Link } from 'react-router-dom';
 
 
 function CalendarCard(props){
@@ -28,7 +28,7 @@ function CalendarCard(props){
     setTextSpeed("[" + props.title + "]")
     }
     
-    var parameter = "/ParticipationForm?eventId=" + props.eventId;
+    var parameter = "/Turnieranmeldung/ParticipationForm";
 
     return <div className="calendar-card-section">
     
@@ -36,7 +36,7 @@ function CalendarCard(props){
 
 
               <div className="yugioh-carlendar-card block">
-              <a href={parameter}>
+              <Link to={parameter}>
               <div className="carlendar-card-container two" onMouseEnter={checkOverflow} onMouseLeave={removeTextSpeed}>
               <img src={images.templateCard2} className="card-img2" alt="Bild" />
               
@@ -51,7 +51,7 @@ function CalendarCard(props){
               <p className="start-text"><FontAwesomeIcon icon={faClock} /> Beginn: {props.start} Uhr</p>
               <p className="participants-number"><FontAwesomeIcon icon={faUserCheck} /> Max. Teilnehmer: 16</p>
           </div>
-          </a>
+          </Link>
         </div>
       </div>
 }

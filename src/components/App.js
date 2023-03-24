@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.scss"
-import { HashRouter  as Router, Routes, Route} from "react-router-dom"
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import ParticipationForm from "./ParticipationForm"
 import Home from "./Home"
 import { gapi } from "gapi-script";
@@ -69,13 +69,15 @@ function App() {
 
 
    return <div>
-      <Router>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-          <Route path="/ParticipationForm" element={<ParticipationForm event={eventsToRender} />}></Route>
+   <div>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Turnieranmeldung/ParticipationForm" element={<ParticipationForm event={eventsToRender} />} />
         </Routes>
-        </Router>        
+      </HashRouter>
     </div>
+ </div>
 }
 
 export default App;
