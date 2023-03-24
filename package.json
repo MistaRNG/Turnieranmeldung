@@ -2,7 +2,7 @@
   "homepage":"https://MistaRNG.github.io/Turnieranmeldung",
   "name": "music-box-taucha",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@devextreme/runtime": "3.0.7",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

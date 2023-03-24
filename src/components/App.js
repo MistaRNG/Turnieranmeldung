@@ -69,12 +69,14 @@ function App() {
 
 
    return <div>
+   <BrowserRouter basename="/Turnieranmeldung">
       <Router>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/Turnieranmeldung" element={<Home />}></Route>
           <Route path="/ParticipationForm" element={<ParticipationForm event={eventsToRender} />}></Route>
         </Routes>
-        </Router>           
+        </Router> 
+        </BrowserRouter>          
     </div>
 }
 
