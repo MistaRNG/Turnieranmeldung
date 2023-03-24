@@ -166,7 +166,7 @@ function ParticipationForm(props){
       </MDBModalBody>
       <MDBModalFooter>
         <a href="https://www.musik-box-taucha.de/startseite"><button className="popup-button btn-lg btn-secondary">zurück zur Startseite</button></a>
-        <a href="/"><button className="popup-button btn-lg btn-primary"> zurück zur Turnieranmeldung</button></a>
+        <a href="/Turnieranmeldung"><button className="popup-button btn-lg btn-primary"> zurück zur Turnieranmeldung</button></a>
         
       </MDBModalFooter>
     </MDBModalContent>
