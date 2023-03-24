@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Turnieranmeldung/static/css/main.9a5d4b38.css",
-    "main.js": "/Turnieranmeldung/static/js/main.63b37630.js",
+    "main.js": "/Turnieranmeldung/static/js/main.0b27f939.js",
     "static/media/headerImage.jpg": "/Turnieranmeldung/static/media/headerImage.4db1b6459d6aa00e2447.jpg",
     "static/media/yugiArtRight.png": "/Turnieranmeldung/static/media/yugiArtRight.39a2c6ab4fd33f78408e.png",
     "static/media/cardTemplate.png": "/Turnieranmeldung/static/media/cardTemplate.92040f1bb24a26a883d3.png",
@@ -17,10 +17,10 @@
     "static/media/covidIcon.png": "/Turnieranmeldung/static/media/covidIcon.8cd6eac2547d4409e4c1.png",
     "index.html": "/Turnieranmeldung/index.html",
     "main.9a5d4b38.css.map": "/Turnieranmeldung/static/css/main.9a5d4b38.css.map",
-    "main.63b37630.js.map": "/Turnieranmeldung/static/js/main.63b37630.js.map"
+    "main.0b27f939.js.map": "/Turnieranmeldung/static/js/main.0b27f939.js.map"
   },
   "entrypoints": [
     "static/css/main.9a5d4b38.css",
-    "static/js/main.63b37630.js"
+    "static/js/main.0b27f939.js"
   ]
 }
