@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.scss"
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { HashRouter  as Router, Routes, Route} from "react-router-dom"
 import ParticipationForm from "./ParticipationForm"
 import Home from "./Home"
 import { gapi } from "gapi-script";
@@ -69,9 +69,9 @@ function App() {
 
 
    return <div>
-      <Router basename="/Turnieranmeldung">
+      <Router>
       <Routes>
-        <Route exact path="/Turnieranmeldung" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
           <Route path="/ParticipationForm" element={<ParticipationForm event={eventsToRender} />}></Route>
         </Routes>
         </Router>        
