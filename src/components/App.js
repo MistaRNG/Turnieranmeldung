@@ -72,7 +72,7 @@ function App() {
    <div>
       <HashRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Turnieranmeldung" element={<Home />} />
           <Route path="/Turnieranmeldung/ParticipationForm" element={<ParticipationForm event={eventsToRender} />} />
         </Routes>
       </HashRouter>
